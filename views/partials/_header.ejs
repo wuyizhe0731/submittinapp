@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>TinyApp</title>
+
+</head>
+
+
+<body>
+  <% if(email) { %> 
+    <p>Hi, <%= email %>! <a href='/logout'>Logout</a></p>
+  <% } else { %>
+    <p>I don't know you. <a href='/login'>Login</a></p>
+
+  <% } %>
+
+</body>
+</html>

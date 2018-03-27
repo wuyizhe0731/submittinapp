@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<% include ./partials/_header.ejs%>
+</head>
+<body>
+	<% for (key in urls) { %>
+
+	<li><a href="/urls/<%=key%>"><%= key %> --- <%= urls[key].fullURL %> </a></li> 
+	<form method="POST" action="/urls/<%=key%>/delete">
+		<input type="submit" name="delete" value="delete"></input>
+	</form>
+	<% } %>
+	<a href="/urls/new">add new url</a>
+</body>
+</html>

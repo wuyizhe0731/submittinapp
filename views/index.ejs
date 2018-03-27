@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <% include ./partials/_header.ejs%>
+</head>
+<body>
+  <h1>Hi!</h1>
+  <% if(email) { %> 
+    <p>Hi, <%= email %>! <a href='/logout'>Logout</a></p>
+  <% } else { %>
+    <p>I don't know you. <a href='/login'>Login</a></p>
+
+  <% } %>
+  <a href='/register'>register</a></p>
+  <a href='/urls'>URLs LIST</a></p>
+</body>
+</html>

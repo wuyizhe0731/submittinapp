@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<% include ./partials/_header.ejs%>
+</head>
+<body>
+	<p>SHORTURL : <%=shortURL%></p>
+	<li><%=fullURL%></li>
+	<form action="/urls/<%=shortURL%>/edit" method="POST">
+    <label for="name">NEW URL</label>
+    <input id="name" type="text" name="newurl">
+
+    <button type="submit">Update</button><br>
+    <a href="/urls">Back to urls list</a>
+</form>    
+</body>
+</html>
